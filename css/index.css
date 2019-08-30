@@ -1,10 +1,12 @@
-html {
-    overflow-x: hidden;
+@import url('https://fonts.googleapis.com/css?family=Manjari&display=swap');
 
+:root {
+    font-family: 'Manjari', sans-serif;
+    --font-color: #00A4D3;
 }
 
-body {
-
+html {
+    overflow-x: hidden;
 }
 
 header {
@@ -14,21 +16,94 @@ header {
     background-size: cover;
 }
 
-#nav-list ul {
+.nav-list ul {
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-end;
 }
 
-#nav-list ul li {
-    
+.nav-list ul li {
+    list-style-type: none;
+    margin-left: 20px;
+    margin-top: 15px;
+    margin-right: 5px;
 }
 
-#header-info {
-    display: block;
-    margin: 0 auto;
-    width: 300px;
+.nav-list ul li a {
+    text-decoration: none;
+    color: #000;
+    text-transform: uppercase;
+    border: 2px solid transparent;
+    padding: 5px;
+}
+
+.nav-list ul li a:hover {
+    border: 2px solid #FFFFFF;
+    background-color: #FFFFFF;
+    transition: all 0.2s;
+}
+
+#burger-menu {
+    display: none;
+}
+
+.header-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 350px;
     height: 300px;
 }
+
+.header-info h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: -30px;
+    color: var(--font-color);
+}
+
+.header-info h4 {
+    font-size: 24px;
+    color: var(--font-color);
+}
+
+.button {
+    display: inline-block;
+    padding: 0.35em 1.2em;
+    border: 0.1em solid #FFFFFF;
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 0.12em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-weight: 300;
+    color: #FFFFFF;
+    text-align: center;
+    transition: all 0.2s;
+    background-color: transparent;
+}
+
+.button:hover {
+    color: #000000;
+    background-color: #FFFFFF;
+    cursor: pointer;
+}
+
+@media (max-width: 650px) {
+    header nav .nav-list ul li a{
+        display: none;
+    }
+     #burger-menu {
+        display: block;
+        font-size: 25px;
+        color: #000;
+     }
+     .header-info h1{
+        font-size: 2.5rem;
+     }
+}
+
+/*
 
 main {
     width: 550px;
@@ -76,4 +151,4 @@ main section h2 {
 
 #european-tour h4 {
     text-align: center;
-}
+} */
