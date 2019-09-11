@@ -229,7 +229,7 @@ main section .wrap.left {
     height: 140px;
 }
 
-#contacts h2 {
+.contacts h2 {
     text-align: center;
 }
 
@@ -245,7 +245,7 @@ main section .tours {
     width: 550px;
 }
 
-#contacts {
+.contacts {
     width: 1200px;
     margin-top: 25px;
 }
@@ -265,23 +265,23 @@ a {
     width: 80px;
 }
 
-#contact-us {
+.contact-us {
     width: 1200px;
     margin-top: 75px;
     margin-bottom: 100px;
 }
 
-#contact-us .form-input{
+.contact-us .form-input{
     width: 300px;
     margin: 0 auto;
     display: block;
 }
 
-#contact-us h2 {
+.contact-us h2 {
     text-align: center;
 }
 
-#contact-us p {
+.contact-us p {
     text-align: center;
 }
 
@@ -308,7 +308,7 @@ a {
     cursor: pointer;
 }
 
-#contact-us form {
+.contact-us form {
     width: 300px;
     margin: auto;
 }
@@ -333,7 +333,7 @@ footer h1 {
 }
 
 @media (max-width: 650px) {
-    header nav .nav-list ul li a{
+    header nav ul li a{
         display: none;
     }
      #menu {
@@ -344,4 +344,22 @@ footer h1 {
      .menu {
          display: block;
      }
+     .responsive {
+         display: block;
+         width: 320px;
+         box-sizing: border-box;
+     } .responsive img{
+         width: 250px;
+         height: 250px;
+     } #about-us-left-image {
+         width: 300px;
+         height: 300px;
+     }
+     #about-us-right-image {
+         width: 300px;
+         height: 300px;
+     }
+     .about-us p {
+         width: 200px;
+     } 
 }
