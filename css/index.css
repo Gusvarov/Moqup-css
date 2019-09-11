@@ -186,8 +186,6 @@ main section h2 {
     font-size: 36px;
 }
 
-
-
 main section h1 {
     text-align: center;
     font-size: 44px;
@@ -333,7 +331,7 @@ footer h1 {
 }
 
 @media (max-width: 650px) {
-    header nav ul li a{
+    .nav-list ul li a{
         display: none;
     }
      #menu {
@@ -341,17 +339,19 @@ footer h1 {
         font-size: 25px;
         color: #000;
      }
-     .menu {
-         display: block;
-     }
      .responsive {
          display: block;
          width: 320px;
-         box-sizing: border-box;
-     } .responsive img{
+         box-sizing: inherit;
+     }
+    .responsive p{
+        width: 320px;
+    }
+      .responsive img {
          width: 250px;
          height: 250px;
-     } #about-us-left-image {
+     }
+      #about-us-left-image {
          width: 300px;
          height: 300px;
      }
@@ -361,5 +361,16 @@ footer h1 {
      }
      .about-us p {
          width: 200px;
-     } 
+     }
+     .responsive h1{
+        width: 320px;
+        text-align: center;
+    }
+    .about-us-responsive {
+        width: 300px;
+    }
+    .responsive h2{
+        width: 320px;
+        text-align: center;
+    }
 }
